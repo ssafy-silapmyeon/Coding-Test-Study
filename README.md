@@ -72,10 +72,10 @@
 
 ## 📁 Repository 폴더 구조
 ```
-{Github ID}/{날짜}/{코드.java}
+{Github ID}/{주차}/{코드.java}
 ```
 
-- 💡 예시: `daehwa_park/230809/PGS_다트_게임.java`
+- 💡 예시: `daehwa_park/1주차/PGS_다트_게임.java`
 
 <br/>
 
