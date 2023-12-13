@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Solution {
+class PGS_가장_먼_노드 {
     static ArrayList<Integer>[] adjList;
     static class Node{
         int num, dist;
