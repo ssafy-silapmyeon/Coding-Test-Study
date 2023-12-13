@@ -1,7 +1,9 @@
+package footdev._1주차;
+
 import java.util.*;
 import java.io.*;
 
-public class Main {
+public class BOJ_공유기_설치 {
 
     static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     static StringTokenizer st;
