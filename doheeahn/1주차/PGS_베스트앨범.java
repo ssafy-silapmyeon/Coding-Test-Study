@@ -12,7 +12,6 @@ class Solution {
     }
     public int[] solution(String[] genres, int[] plays) {
         int[] answer = {};
-        int idx =0;
         HashMap <String, Integer> mapSum = new HashMap<>();
         HashMap <String, ArrayList<Music>> mapMusic = new HashMap<>();
 
@@ -57,7 +56,6 @@ class Solution {
             for(Music m : mapMusic.get(g)){//music 객체 리스트
                 result.add(m.id);
                 cnt++;
-                idx++;
                 if(cnt==2)
                     break;
             }
