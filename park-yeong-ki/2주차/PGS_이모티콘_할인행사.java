@@ -1,4 +1,4 @@
-class PSG_이모티콘_할인행사 {
+class PGS_이모티콘_할인행사 {
     static int[] sale = {10, 20, 30, 40};
     static int[] arr;
     static int[] ans;

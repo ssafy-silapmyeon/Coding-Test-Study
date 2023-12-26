@@ -1,6 +1,6 @@
 import java.util.*;
 
-class PSG_이중우선순위큐 {
+class PGS_이중우선순위큐 {
     public int[] solution(String[] operations) {
         TreeMap<Integer, Integer> treeMap = new TreeMap<>();
 
