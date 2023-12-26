@@ -1,6 +1,6 @@
 import java.util.*;
 
-class PSG_야근_지수 {
+class PGS_야근_지수 {
     public long solution(int n, int[] works) {
         PriorityQueue<Integer> pq = new PriorityQueue<>(Collections.reverseOrder());
         for(int i=0; i<works.length; i++){

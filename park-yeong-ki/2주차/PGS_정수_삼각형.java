@@ -1,4 +1,4 @@
-class PSG_정수_삼각형 {
+class PGS_정수_삼각형 {
     public int solution(int[][] triangle) {
         int n = triangle.length;
         int[][] dp = new int[n+1][n+1];

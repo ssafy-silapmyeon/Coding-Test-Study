@@ -1,6 +1,6 @@
 import java.util.*;
 
-class PSG_최고의_집합 {
+class PGS_최고의_집합 {
     public int[] solution(int n, int s) {
         int init = s / n;
         int remain = s % n;
