@@ -1,21 +1,12 @@
 package footdev._6주차;
 
 import java.util.*;
-import java.util.stream.IntStream;
 
 class PGS_양궁대회 {
 
-    boolean[] v = new boolean[11];
     TreeMap<Integer, List<int[]>> map = new TreeMap<>();
 
     public int[] solution(int n, int[] info) {
-
-        // 안가도 되는 k점수 라벨링
-        for (int i = 0; i < info.length; i++) {
-            if (n > info[i]) {
-                v[i] = true;
-            }
-        }
 
         //완탐
         search(n, 0, new int[11], info);
@@ -72,7 +63,7 @@ class PGS_양궁대회 {
             return;
         }
 
-        if (v[depth] && n > info[depth]) {
+        if (n > info[depth]) {
             score[depth] = info[depth] + 1;
             search(n - score[depth], depth + 1, score, info);
             score[depth] = 0;
