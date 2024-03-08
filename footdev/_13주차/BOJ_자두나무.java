@@ -39,12 +39,10 @@ public class BOJ_자두나무 {
                     if (plums[i - 1] == 1) dp[i][j]++;
                     continue;
                 }
-                if (j % 2 == 0) {
-                    if (plums[i - 1] == 1) dp[i][j] = Math.max(dp[i - 1][j] + 1, dp[i - 1][j - 1]);
-                    else dp[i][j] = Math.max(dp[i - 1][j], dp[i - 1][j - 1] + 1);
+                if ((j % 2 == 0 && plums[i - 1] == 1) || (j % 2 == 1 && plums[i - 1] == 2)) {
+                    dp[i][j] = Math.max(dp[i - 1][j] + 1, dp[i - 1][j - 1]);
                 } else  {
-                    if (plums[i - 1] == 2) dp[i][j] = Math.max(dp[i - 1][j] + 1, dp[i - 1][j - 1]);
-                    else dp[i][j] = Math.max(dp[i - 1][j], dp[i - 1][j - 1] + 1);
+                    dp[i][j] = Math.max(dp[i - 1][j], dp[i - 1][j - 1] + 1);
                 }
             }
         }
